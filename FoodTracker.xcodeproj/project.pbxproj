@@ -16,6 +16,7 @@
 		40C7032E1D837C7F00F4DAED /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7032D1D837C7F00F4DAED /* RatingControl.swift */; };
 		40FE50F91DA6F77400D2221C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE50F81DA6F77400D2221C /* Meal.swift */; };
 		40FE50FA1DA6F77400D2221C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE50F81DA6F77400D2221C /* Meal.swift */; };
+		40FE50FC1DA7034000D2221C /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE50FB1DA7034000D2221C /* MealTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		40056AC11D762DD800C41029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C7032D1D837C7F00F4DAED /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		40FE50F81DA6F77400D2221C /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		40FE50FB1DA7034000D2221C /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				40056AB31D762DD700C41029 /* LaunchScreen.storyboard */,
 				40056AB61D762DD700C41029 /* Info.plist */,
 				40C7032D1D837C7F00F4DAED /* RatingControl.swift */,
+				40FE50FB1DA7034000D2221C /* MealTableViewCell.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				40056AAD1D762DD700C41029 /* ViewController.swift in Sources */,
 				40C7032E1D837C7F00F4DAED /* RatingControl.swift in Sources */,
 				40056AAB1D762DD700C41029 /* AppDelegate.swift in Sources */,
+				40FE50FC1DA7034000D2221C /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
