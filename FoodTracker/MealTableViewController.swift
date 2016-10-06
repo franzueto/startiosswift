@@ -9,15 +9,28 @@
 import UIKit
 
 class MealTableViewController: UITableViewController {
-
+    
+    // MARK: Properties
+    var meals = [Meal]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // Load the sample data.
+        loadSampleMeals()
+    }
+    
+    func loadSampleMeals() {
+        let photo1 = UIImage(named: "meal1")!
+        let meal1 = Meal(name: "Caprese Salad", rating: 4, photo: photo1)!
+        
+        let photo2 = UIImage(named: "meal2")!
+        let meal2 = Meal(name: "Chicken and Potatoes", rating: 5, photo: photo2)!
+        
+        let photo3 = UIImage(named: "meal3")!
+        let meal3 = Meal(name: "Pasta with Meatballs", rating: 3, photo: photo3)!
+        
+        meals += [meal1, meal2, meal3]
     }
 
     override func didReceiveMemoryWarning() {
