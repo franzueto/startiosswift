@@ -16,6 +16,13 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    /*
+     This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)`
+     or constructed as part of adding a new meal.
+     */
+    var meal: Meal?
     
     // UIImagePickerController is a view controller that lets a user pick media from their photo library.
     let imagePickerController = UIImagePickerController()
