@@ -51,6 +51,20 @@ class MealViewController: UIViewController, UITextFieldDelegate,
         
     }
     
+    // MARK: Navigation
+    
+    // This method lets you configure a view controller before it's presented.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if saveButton === sender {
+            let name = nameTextField.text ?? ""
+            let photo = photoImageView.image
+            let rating = ratingControl.rating
+            
+            // Set the meal to be passed to MealTableViewController after the unwind segue.
+            meal = Meal(name: name, rating: rating, photo: photo)
+        }
+    }
+    
     // MARK: Actions
     
     @IBAction func selectImageFromLibrary(sender: UITapGestureRecognizer) {
