@@ -31,6 +31,13 @@ class MealViewController: UIViewController, UITextFieldDelegate,
         super.viewDidLoad()
         nameTextField.delegate = self
         
+        if let meal = meal {
+            navigationItem.title = meal.name
+            nameTextField.text   = meal.name
+            photoImageView.image = meal.photo
+            ratingControl.rating = meal.rating
+        }
+        
         // Enable the Save button only if the text field has a valid Meal name.
         checkValidMealName()
         
